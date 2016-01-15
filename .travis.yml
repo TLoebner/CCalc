@@ -1,16 +1,21 @@
 
 # Travis CI configuration file
 
-sudo: false
-
 language: c
 
 script: gcc src/CCalc.c -o ./CCalc.o && gcc src/Test_CCalc.c -o ./Test_CCalc.o
 
-compiler:
-  - clang
-  - gcc
-
-os:
-  - linux
-  - osx
+matrix:
+	-os: linux
+	sudo: false
+	gcc: 4.6
+	-os: linux
+	sudo: false
+	gcc: 4.7
+	-os: linux
+	sudo: false
+	gcc: 4.8
+	-os: linux
+	sudo: false
+	gcc: 5.1
+	-os: osx
