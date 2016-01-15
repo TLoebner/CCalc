@@ -1,4 +1,0 @@
-# Image Files are BINARY
-
-*.bmp -k 'b'
-*.ico -k 'b'
