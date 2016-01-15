@@ -1,0 +1,6 @@
+language: c
+compiler:
+	- clang
+	- gcc
+
+gcc src/CCalc.c -o build/CCalc.o && gcc src/Test_CCalc.c -o build/Test_CCalc.o && ./build/Test_CCalc.o

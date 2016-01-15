@@ -1,0 +1,15 @@
+*.plg
+*.opt
+*.ncb
+Makefile
+Makefile.in
+config.status
+config.log
+config.h
+stamp-h1
+autom4te.cache
+bin
+obj
+config.h.in
+configure
+aclocal.m4
